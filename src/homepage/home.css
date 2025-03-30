@@ -1,0 +1,180 @@
+
+.navbar {
+    background-color: #263646;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 0 5%;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 2000px;
+    padding: 0 20px;
+}
+
+  .navbar-logo {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #f39c12;
+  }
+  
+
+  .home-section {
+    padding: 60px 5%;
+    min-height: 100vh;
+    text-align:  left;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none; 
+    }
+  }
+  .skills-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #111;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: rgb(34, 34, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+html, body {
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+* {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nav-menu a, .skill-card, .contact-form button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-menu a:hover, .skill-card:hover, .contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+html {
+    scroll-behavior: smooth;
+}
+.home-section, .skills-section, .contact-section {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.skill-card {
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
