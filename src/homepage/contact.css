@@ -1,0 +1,43 @@
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: rgb(34, 34, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
